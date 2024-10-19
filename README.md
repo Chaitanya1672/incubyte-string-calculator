@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# String Calculator
 
-## Getting Started
+A simple web application that calculates the sum of numbers in a string.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This project is a basic implementation of a string calculator, where users can input a string of numbers separated by commas, newlines, or custom delimiters. The application will then calculate the sum of these numbers and display the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Calculates the sum of numbers in a string
+* Supports multiple delimiters (commas, newlines, custom delimiters)
+* Handles negative numbers and throws an error if encountered
+* Provides a simple and intuitive user interface
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technology Stack
 
-## Learn More
+* Frontend: Next js(React), Material-UI
+* Backend: None (client-side only)
+* Testing: Vitest (jest/react-testing-library)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository: `git clone https://github.com/Chaitanya1672/incubyte-string-calculator.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:3000`
 
-## Deploy on Vercel
+## Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run the tests, use the following command:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* `npm run test`
+
+## Usage
+
+1. Enter a string of numbers in the input field, separated by commas, newlines, or custom delimiters.
+2. Click the "Calculate" button to calculate the sum of the numbers.
+3. The result will be displayed below the input field.
