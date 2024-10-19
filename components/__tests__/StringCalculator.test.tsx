@@ -30,6 +30,10 @@ describe("String Calculator Functions", () => {
     it("should handle custom delimiter", () => {
       expect(add("//;\n1;2")).toBe(3);
     });
+
+    it("should handle NaN", () => {
+      expect(add("//\n1;2")).toBe(3);
+    });
   });
 
   describe("Helper Functions", () => {

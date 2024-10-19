@@ -43,6 +43,8 @@ export const add = (numbers: string): number => {
   const {delimiter, numbersStr} = parseInput(numbers);
   const nums = parseNumbers(numbersStr, delimiter);
   validateNegativeNumbers(nums);
-
-  return nums.reduce((sum, num) => sum + num, 0);
+  return nums.reduce((sum, num) => {
+    if (isNaN(num)) return sum;
+    return sum + num;
+  }, 0);
 };
