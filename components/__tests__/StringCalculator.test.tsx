@@ -1,7 +1,7 @@
 import {describe, it, expect} from "vitest";
-import {add, validateNegativeNumbers} from "./stringCalculator";
+import {add, validateNegativeNumbers} from "../../utils/stringCalculator";
 
-describe("String Calculator", () => {
+describe("String Calculator Functions", () => {
   describe("Main add function", () => {
     it("should return 0 for empty string", () => {
       expect(add("")).toBe(0);
